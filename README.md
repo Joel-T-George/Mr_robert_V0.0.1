@@ -3,7 +3,7 @@
 
 Mr Robert Is The Basic Function Hear and Replay To Us It Can Make Same Functions Sending Emails,Get News ,Weather Reports And wepikdea information
 
-###robert.py =>
+##robert.py =>
 ```python
 if __name__ == '__main__':
     clear = lambda: os.system('cls')
@@ -115,12 +115,12 @@ Special Lines Go to explain in coming lines..
  > non stop playing the audio 
  Sending Email 'sendmail' function
  
- ###lib_machines/updates.py  =>
+ ##lib_machines/updates.py  =>
  Importing  packages  
  Call the api link for weather,news,wikipedia
  Collect data from the api and handle json formated data 
  and make more functionality in the update.py file
-### INSTALL PACKAGES
+## INSTALL PACKAGES
  ```
     pip install pyttsx3
     pip install SpeechRecognition
@@ -130,14 +130,14 @@ Special Lines Go to explain in coming lines..
     pip install PyPDF2
     
  ```
- ######Docs of Packages
+##Docs of Packages
     Docs of pyttsx3 [click](https://pypi.org/project/pyttsx3/).
     Docs of SpeechRecognition [click](https://pypi.org/project/SpeechRecognition/).
     Docs of wikipedia [click](https://pypi.org/project/wikipedia/).
     Docs of googletrans [click](https://pypi.org/project/googletrans/).
     Docs of PyPDF2 [click](https://pypi.org/project/PyPDF2/).
      
- ###API WEBSITES LINK
+##API WEBSITES LINK
     For Weather api use this link [Openweather](https://api.openweathermap.org).
     For News api use this link[newsapi](http://newsapi.org/).
  
