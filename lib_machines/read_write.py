@@ -88,6 +88,8 @@ a = int(input("start page : "))
 e = int(input("end page : "))
 pdfred(a,e)
 
+#thankyou
+
 
 
       
