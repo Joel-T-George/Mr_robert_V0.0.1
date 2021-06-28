@@ -34,8 +34,8 @@ def Speakon(content_to_speak):
     mouth.runAndWait()#speak organ is formed.................
 #here the weather update process is happends ......
 def weather():
-    weather_api ="54851e0215834b520af256de1255e551"
-    location = "chennai"
+    weather_api ="_Enter_your_Api_Key_"
+    location = "_your_location_"
 
 
     complete_api_link = "https://api.openweathermap.org/data/2.5/weather?q="+location+"&appid="+weather_api
@@ -67,7 +67,7 @@ def weather():
         print(wind_speed_rob)
 # it say the today news 
 def Update_news():       
-    web = requests.get("http://newsapi.org/v2/top-headlines?country=in&apiKey=12ce725c33b241e9aa4370739dbf8d32")
+    web = requests.get("http://newsapi.org/v2/top-headlines?country=in&apiKey=_Enter_your_Api_Key_")
 
     content = web.content
     news = json.loads(content)
@@ -129,16 +129,16 @@ def wiki(query):
             run = False
             return run
 mail_id_list = {
-    "daisy":"daisythomas2007j@gmail.com",
-    "kings":"kecbme016@kingsedu.ac.in",
+    "test0":"_testing_email_id_0",
+    "Test2":"_testing_email_id_1",
 }
 
 def sender( to_mail,subject,messages):
     server = smtplib.SMTP('smtp.gmail.com',587)
     server.starttls()
-    server.login('joelthomas0203@gmail.com','ezidvtbiwnzwlyek')
+    server.login('_your_email_id__.com','Api_Key')
     emails = EmailMessage()
-    emails['From'] =  'joelthomas0203@gmail.com'
+    emails['From'] =  '_your_email_id__.com'
     emails['To'] = to_mail
     emails['Subject'] = subject
     emails.set_content(messages)
@@ -148,7 +148,7 @@ def sendmail():
     Speakon("To whom I send email")
     reciver = Hear().lower()
     reciver = reciver.replace("User said:"," ")
-    reciver = reciver.replace('desi','daisy')
+   
     id = mail_id_list[reciver]
     print(id)
     Speakon("What was the Subject of the message")
